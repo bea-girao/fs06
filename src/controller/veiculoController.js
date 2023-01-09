@@ -6,7 +6,7 @@ async function listar() {
     return await database.executar(sql);
 }
 
-async function cadastrar({marca, modelo, ano}) { // marca, modelo, ano
+async function cadastrar({marca, modelo, ano}) {
     let sql = `INSERT INTO tb_veiculo (marca, modelo, ano) 
                 VALUES ('${marca}', '${modelo}', '${ano}')`;
 
